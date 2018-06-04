@@ -9,7 +9,7 @@ const request = require('request')
 
 router.get('/:input_string', function(req,res,next){
     let str = req.params.input_string;
-    str_len = str.length;
+    let str_len = str.length;
     res.json({string: str, length: str_len});
 });
 
